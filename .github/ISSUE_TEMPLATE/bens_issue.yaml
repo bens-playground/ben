@@ -1,0 +1,12 @@
+name: Test
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - octocat
+body:
+  - type: textarea
+    id: test
+    attributes:
+      label: Repos
+      description: Please add the repos you wish to add this user to, one per line
