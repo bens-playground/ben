@@ -10,3 +10,8 @@ body:
     attributes:
       label: Repos
       description: Please add the repos you wish to add this user to, one per line
+  - type: textarea
+    id: test2
+    attributes:
+      label: Repos2
+      description: Please add the repos you wish to add this user to, one per line
