@@ -1,7 +1,10 @@
 name: Create a External Collaborator Pull Request
-description: Creating an issue with this template will automatically create a valid pull request for an external collaborator
-title: "Please create an external collaborator pull request "
-labels: ["collaborator"]
+description: >-
+  Creating an issue with this template will automatically create a valid pull
+  request for an external collaborator
+title: 'Please create an external collaborator pull request '
+labels:
+  - collaborator
 body:
   - type: input
     id: username
@@ -42,14 +45,18 @@ body:
     id: added_by
     attributes:
       label: added_by
-      description: Who is requesting access for this user? Please use format Name <email> e.g. "Ben Ashton <ben.ashton@digital.justice.gov.uk>"
+      description: >-
+        Who is requesting access for this user? Please use format Name <email>
+        e.g. "Ben Ashton <ben.ashton@digital.justice.gov.uk>"
     validations:
       required: true
-   - type: input
+  - type: input
     id: review_after
     attributes:
       label: review_after
-      description: When does access for this user have to be reviewed? Please use format YYYY-MM-DD e.g. 2022-10-10. No longer than 12 months in the future.
+      description: >-
+        When does access for this user have to be reviewed? Please use format
+        YYYY-MM-DD e.g. 2022-10-10. No longer than 12 months in the future.
     validations:
       required: true
   - type: dropdown
@@ -66,6 +73,6 @@ body:
     id: repositories
     attributes:
       label: Repositories
-      description: Please add the repos you wish to add this user to, one per line
+      description: 'Please add the repos you wish to add this user to, one per line'
     validations:
       required: true
