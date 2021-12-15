@@ -62,7 +62,8 @@ body:
   - type: dropdown
     id: permission
     attributes:
-      label: What permission does the user need?
+      label: permission
+      description: What permission does the user need?
       options:
         - maintain
         - admin
@@ -72,7 +73,7 @@ body:
   - type: textarea
     id: repositories
     attributes:
-      label: Repositories
+      label: repositories
       description: 'Please add the repos you wish to add this user to, one per line'
     validations:
       required: true
